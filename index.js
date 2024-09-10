@@ -17,16 +17,19 @@ start.addEventListener("click", () => {
       span.innerText = `NO:${cal++}`;
 
       setTimeout(() => {
-        wow.innerHTML = `<img src='./gifimage.gif'>`;
+        wow.innerHTML = `<h1>wow super</h1>`;
+        
       }, 12500);
     }, index * 500);
+
   });
 });
 let cal = 0;
 back.addEventListener("click", () => {
-  wow.innerHTML = "";
-  box.forEach((e, index) => {
-    setTimeout(() => {
+    
+
+    box.forEach((e, index) => {
+        setTimeout(() => {
       span.innerText = `NO:0`;
       e.style.transform = "translateY(0)";
     }, index * 200);
